@@ -9,7 +9,7 @@ if ($idpengguna == 'admin') {
     $row = $conn->query($sql)->fetch_object();
     if (password_verify($katalaluan, $row->katalaluan)) {
         $_SESSION['idpengguna'] = 'admin';
-        header('location:admin/');
+        header('location: admin/');
     } else {
         gagal();
     }

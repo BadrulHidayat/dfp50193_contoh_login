@@ -2,7 +2,7 @@
 require '../conn.php';
 
 if(!isset($_SESSION['idstaff']))header('location:../');
-$idcustomer = $_SESSION['idstaff'];
+$idstaff = $_SESSION['idstaff'];
 
 $sql = "SELECT staff_name FROM staff WHERE idstaff = ?";
 $stmt = $conn->prepare($sql);
