@@ -34,6 +34,8 @@ require '../conn.php';
                         <a href="kemaskini.php?idstaff=<?php echo $row->idstaff; ?>"><button>Edit</button></a>
                         |
                         <a href="padam.php?idstaff=<?php echo $row->idstaff; ?>" onclick="return confirm('Betul ke nak padam?');"><button>Padam</button></a>
+                        |
+                        <a href="reset_pswd.php?idstaff=<?php echo $row->idstaff; ?>" onclick="return confirm('Betul ke nak reset kata laluan?');"><button>Reset Kataluan</button></a>
                     </td>
                 </tr>
         <?php
