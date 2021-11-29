@@ -15,5 +15,6 @@
         <button type="submit">MASUK</button>
     </form>
 
+    <a href="register.php">Register</a>
     </body>
 </html>

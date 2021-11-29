@@ -1,12 +1,14 @@
 <?php
-require '../conn.php';
+require 'conn.php';
 
-$id = $_POST['idpengguna'];
-$nama = $_POST['staff_name'];
+$nama = $_POST['cust_name'];
+$nric = $_POST['nric'];
+$kata = $_POST['katalaluan'];
 
-$sql = "INSERT INTO staff (idpengguna, staff_name) VALUES (?, ?, ?)";
+$sql = "INSERT INTO customer (nric, katalaluan, cust_name) VALUES (?, ?, ?)";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('sss', $id, $nama);
+$kata = password_hash($kata, PASSWORD_BCRYPT);
+$stmt->bind_param('sss', $nric, $kata, $nama);
 $stmt->execute();
 
 if ($conn->error) {
