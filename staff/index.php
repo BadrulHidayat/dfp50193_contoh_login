@@ -23,6 +23,9 @@ $stmt->fetch();
     <title>Document</title>
 </head>
 <body>
+<a href="../"><button>Log out</button></a> 
 <?php echo "Selamat Datang $staff_name"; ?>
+<br>
+    <a href="change_pswd.php"><button>Tukar Kata Laluan</button></a>
 </body>
 </html>

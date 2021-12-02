@@ -11,6 +11,7 @@ require '../conn.php';
     <title>Document</title>
 </head>
 <body>
+<a href="../"><button>Log out</button></a>
 <h2>Selamat Datang Admin</h2>
 <h3>Senarai Staff</h3>
 <table border="1" cellpadding="8" cellspacing="0">
@@ -45,5 +46,6 @@ require '../conn.php';
     </table>
     <br>
     <a href="tambah.php"><button>Tambah Staff</button></a>
+    <a href="change_pswd.php"><button>Tukar Kata Laluan</button></a>
 </body>
 </html>
